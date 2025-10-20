@@ -125,6 +125,69 @@ Task Dependencies:
 load_data → data_preprocessing → build_save_model → load_model
 ```
 
+## 📊 Successful DAG Execution
+
+The following screenshot shows the successful execution of the GMM Segmentation DAG with all tasks completed:
+
+![Airflow DAG Success](assets/graph_view.png)
+
+All tasks shown in green indicate successful completion:
+- ✅ **start** - DAG initialization
+- ✅ **run_gmm** - GMM model execution  
+- ✅ **evaluate** - Model evaluation
+- ✅ **visualize** - Results visualization
+- ✅ **end** - DAG completion
+
+## 🎨 GMM Segmentation Results
+
+The pipeline successfully performs image segmentation using Gaussian Mixture Models. Here's an example output showing the segmented image with different regions identified by the GMM algorithm:
+
+![GMM Segmentation Result](working_data/gmm_results/segmentation_2025-10-20.png)
+
+The segmentation clearly identifies:
+- **Green regions**: Background/vegetation areas
+- **Pink/Magenta regions**: Primary subject (appears to be an animal)
+- **Light green regions**: Ground/foreground areas
+
+## 🔧 Additional Enhancements
+
+### Visualization Function Added
+I implemented a custom visualization function to save the segmentation results as PNG images for easier viewing:
+```python
+def visualize_results(**context):
+    """Load and visualize the segmentation results"""
+    import pickle
+    import matplotlib
+    matplotlib.use('Agg')  # Use non-interactive backend for Docker
+    import matplotlib.pyplot as plt
+    import numpy as np
+    
+    ti = context['ti']
+    segmentation_path = f'/opt/airflow/working_data/gmm_results/segmentation_{context["ds"]}.pkl'
+    
+    # Load segmentation image
+    with open(segmentation_path, 'rb') as f:
+        segmentation_image = pickle.load(f)
+    
+    # Save as PNG
+    png_path = segmentation_path.replace('.pkl', '.png')
+    plt.figure(figsize=(10, 10))
+    plt.imshow(segmentation_image)
+    plt.title('GMM Segmentation Result')
+    plt.axis('off')
+    plt.savefig(png_path)
+    plt.close()  # Properly close the figure to free memory
+    
+    print(f"Visualization saved to {png_path}")
+    return f"Image saved as {png_path}"
+```
+
+This function:
+- Loads the pickled segmentation results
+- Creates a high-quality visualization using matplotlib
+- Saves the result as a PNG file for easy viewing
+- Properly manages memory by closing figures after saving
+
 ## 🐛 Troubleshooting
 
 ### Common Issues and Solutions:
@@ -144,8 +207,6 @@ load_data → data_preprocessing → build_save_model → load_model
 - Original lab materials by [Professor Ramin Mohammadi](https://github.com/raminmohammadi)
 - MLOps course at Northeastern University
 
-## 📄 License
-This project is for educational purposes as part of the MLOps course at NEU.
 
 ---
 **Author:** Asadullah Waraich  
