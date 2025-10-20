@@ -1,0 +1,40 @@
+[2025-10-20T03:26:59.286+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: gmm_segmentation.evaluate manual__2025-10-20T03:21:36.507149+00:00 [queued]>
+[2025-10-20T03:26:59.291+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: gmm_segmentation.evaluate manual__2025-10-20T03:21:36.507149+00:00 [queued]>
+[2025-10-20T03:26:59.291+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T03:26:59.291+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2025-10-20T03:26:59.291+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T03:26:59.297+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): evaluate> on 2025-10-20 03:21:36.507149+00:00
+[2025-10-20T03:26:59.300+0000] {standard_task_runner.py:55} INFO - Started process 325 to run task
+[2025-10-20T03:26:59.303+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'gmm_segmentation', 'evaluate', 'manual__2025-10-20T03:21:36.507149+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/gmm_segmentation.py', '--cfg-path', '/tmp/tmp0ubd390y']
+[2025-10-20T03:26:59.303+0000] {standard_task_runner.py:83} INFO - Job 24: Subtask evaluate
+[2025-10-20T03:26:59.363+0000] {task_command.py:388} INFO - Running <TaskInstance: gmm_segmentation.evaluate manual__2025-10-20T03:21:36.507149+00:00 [running]> on host 80e0c3cd0cd6
+[2025-10-20T03:26:59.550+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=asad_waraich
+AIRFLOW_CTX_DAG_ID=gmm_segmentation
+AIRFLOW_CTX_TASK_ID=evaluate
+AIRFLOW_CTX_EXECUTION_DATE=2025-10-20T03:21:36.507149+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-10-20T03:21:36.507149+00:00
+[2025-10-20T03:26:59.562+0000] {logging_mixin.py:137} INFO - ==================================================
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO - GMM SEGMENTATION EVALUATION REPORT
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO - ==================================================
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO - Execution Date: 2025-10-20
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO - Optimal Components: 3
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO - Model saved at: /opt/***/working_data/gmm_results/gmm_model_2025-10-20.pkl
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO - 
+Segment Distribution:
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO -   segment_0: 61710 pixels (39.97%)
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO -   segment_1: 72540 pixels (46.98%)
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO -   segment_2: 20151 pixels (13.05%)
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO - 
+Quality Metrics:
+[2025-10-20T03:26:59.563+0000] {logging_mixin.py:137} INFO -   Largest segment: 46.98%
+[2025-10-20T03:26:59.564+0000] {logging_mixin.py:137} INFO -   Smallest segment: 13.05%
+[2025-10-20T03:26:59.564+0000] {logging_mixin.py:137} INFO -   Balance ratio: 0.28
+[2025-10-20T03:26:59.564+0000] {logging_mixin.py:137} INFO -   Segmentation appears well-balanced
+[2025-10-20T03:26:59.564+0000] {python.py:177} INFO - Done. Returned value was: Evaluation complete
+[2025-10-20T03:26:59.574+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=gmm_segmentation, task_id=evaluate, execution_date=20251020T032136, start_date=20251020T032659, end_date=20251020T032659
+[2025-10-20T03:26:59.613+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-10-20T03:26:59.627+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

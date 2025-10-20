@@ -1,0 +1,43 @@
+[2025-10-20T02:22:55.554+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: gmm_segmentation_simple.run_gmm manual__2025-10-20T02:17:52.745923+00:00 [queued]>
+[2025-10-20T02:22:55.559+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: gmm_segmentation_simple.run_gmm manual__2025-10-20T02:17:52.745923+00:00 [queued]>
+[2025-10-20T02:22:55.560+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T02:22:55.560+0000] {taskinstance.py:1280} INFO - Starting attempt 2 of 2
+[2025-10-20T02:22:55.560+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T02:22:55.566+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): run_gmm> on 2025-10-20 02:17:52.745923+00:00
+[2025-10-20T02:22:55.569+0000] {standard_task_runner.py:55} INFO - Started process 464 to run task
+[2025-10-20T02:22:55.571+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'gmm_segmentation_simple', 'run_gmm', 'manual__2025-10-20T02:17:52.745923+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/gmm_segmentation.py', '--cfg-path', '/tmp/tmpdbq3behi']
+[2025-10-20T02:22:55.572+0000] {standard_task_runner.py:83} INFO - Job 11: Subtask run_gmm
+[2025-10-20T02:22:55.598+0000] {task_command.py:388} INFO - Running <TaskInstance: gmm_segmentation_simple.run_gmm manual__2025-10-20T02:17:52.745923+00:00 [running]> on host 2f7303ce5544
+[2025-10-20T02:22:55.628+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=asad_waraich
+AIRFLOW_CTX_DAG_ID=gmm_segmentation_simple
+AIRFLOW_CTX_TASK_ID=run_gmm
+AIRFLOW_CTX_EXECUTION_DATE=2025-10-20T02:17:52.745923+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-10-20T02:17:52.745923+00:00
+[2025-10-20T02:22:55.824+0000] {logging_mixin.py:137} INFO - Starting GMM Image Segmentation...
+[2025-10-20T02:22:55.825+0000] {logging_mixin.py:137} INFO - Loading image from /opt/***/dags/data/TestImageHorse.jpg
+[2025-10-20T02:22:55.829+0000] {logging_mixin.py:137} INFO - Image loaded successfully: 321x481
+[2025-10-20T02:22:56.190+0000] {logging_mixin.py:137} INFO - Image shape: 321x481
+[2025-10-20T02:22:56.190+0000] {logging_mixin.py:137} INFO - Total pixels: 154401
+[2025-10-20T02:22:56.190+0000] {logging_mixin.py:137} INFO - Performing cross-validation...
+[2025-10-20T02:22:57.415+0000] {logging_mixin.py:137} INFO - K=2: Average log-likelihood = 2.4052
+[2025-10-20T02:22:59.059+0000] {logging_mixin.py:137} INFO - K=3: Average log-likelihood = 2.8197
+[2025-10-20T02:23:03.102+0000] {logging_mixin.py:137} INFO - K=4: Average log-likelihood = 2.9959
+[2025-10-20T02:23:05.959+0000] {logging_mixin.py:137} INFO - K=5: Average log-likelihood = 3.0709
+[2025-10-20T02:23:09.657+0000] {logging_mixin.py:137} INFO - K=6: Average log-likelihood = 3.1974
+[2025-10-20T02:23:14.644+0000] {logging_mixin.py:137} INFO - K=7: Average log-likelihood = 3.2966
+[2025-10-20T02:23:14.645+0000] {logging_mixin.py:137} INFO - 
+Optimal K determined: 3
+[2025-10-20T02:23:14.645+0000] {logging_mixin.py:137} INFO - Training final GMM with K=3...
+[2025-10-20T02:23:15.721+0000] {logging_mixin.py:137} INFO - 
+Segmentation Statistics:
+[2025-10-20T02:23:15.722+0000] {logging_mixin.py:137} INFO -   segment_0: 61710 pixels (39.97%)
+[2025-10-20T02:23:15.722+0000] {logging_mixin.py:137} INFO -   segment_1: 72540 pixels (46.98%)
+[2025-10-20T02:23:15.722+0000] {logging_mixin.py:137} INFO -   segment_2: 20151 pixels (13.05%)
+[2025-10-20T02:23:15.725+0000] {python.py:177} INFO - Done. Returned value was: GMM segmentation complete with K=3
+[2025-10-20T02:23:15.741+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=gmm_segmentation_simple, task_id=run_gmm, execution_date=20251020T021752, start_date=20251020T022255, end_date=20251020T022315
+[2025-10-20T02:23:15.782+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-10-20T02:23:15.810+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
