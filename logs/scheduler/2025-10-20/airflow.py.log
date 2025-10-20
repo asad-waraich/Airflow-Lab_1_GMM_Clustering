@@ -4771,3 +4771,211 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'kneed'
 [2025-10-20T04:38:14.782+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
 [2025-10-20T04:38:14.789+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.473 seconds
+[2025-10-20T04:38:45.674+0000] {processor.py:153} INFO - Started process (PID=5275) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:38:45.674+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:38:45.674+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:38:45.674+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:38:46.200+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:38:46.198+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:38:46.200+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:38:46.212+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.540 seconds
+[2025-10-20T04:39:17.131+0000] {processor.py:153} INFO - Started process (PID=5314) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:39:17.134+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:39:17.135+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:39:17.135+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:39:17.674+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:39:17.673+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:39:17.674+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:39:17.687+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.562 seconds
+[2025-10-20T04:39:48.480+0000] {processor.py:153} INFO - Started process (PID=5353) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:39:48.481+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:39:48.482+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:39:48.482+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:39:48.925+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:39:48.924+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:39:48.925+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:39:48.933+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.458 seconds
+[2025-10-20T04:40:19.131+0000] {processor.py:153} INFO - Started process (PID=5391) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:40:19.133+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:40:19.133+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:40:19.133+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:40:19.537+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:40:19.536+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:40:19.537+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:40:19.544+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.416 seconds
+[2025-10-20T04:40:49.637+0000] {processor.py:153} INFO - Started process (PID=5418) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:40:49.639+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:40:49.640+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:40:49.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:40:50.132+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:40:50.129+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:40:50.132+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:40:50.142+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.508 seconds
+[2025-10-20T04:41:21.108+0000] {processor.py:153} INFO - Started process (PID=5455) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:41:21.110+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:41:21.110+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:41:21.110+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:41:21.500+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:41:21.499+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:41:21.501+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:41:21.509+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.405 seconds
+[2025-10-20T04:41:52.490+0000] {processor.py:153} INFO - Started process (PID=5494) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:41:52.494+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:41:52.496+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:41:52.495+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:41:52.964+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:41:52.963+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:41:52.964+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:41:52.974+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.490 seconds
+[2025-10-20T04:42:23.819+0000] {processor.py:153} INFO - Started process (PID=5533) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:42:23.820+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:42:23.821+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:42:23.821+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:42:24.327+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:42:24.326+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:42:24.327+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:42:24.336+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.521 seconds
+[2025-10-20T04:42:55.104+0000] {processor.py:153} INFO - Started process (PID=5569) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:42:55.106+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:42:55.108+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:42:55.108+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:42:55.622+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:42:55.620+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:42:55.622+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:42:55.632+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.530 seconds
+[2025-10-20T04:43:26.432+0000] {processor.py:153} INFO - Started process (PID=5599) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:43:26.439+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:43:26.440+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:43:26.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:43:26.871+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:43:26.870+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:43:26.871+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:43:26.880+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.452 seconds
+[2025-10-20T04:43:57.788+0000] {processor.py:153} INFO - Started process (PID=5638) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:43:57.790+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:43:57.791+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:43:57.791+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:43:58.456+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:43:58.454+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:43:58.456+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:43:58.498+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.714 seconds
+[2025-10-20T04:44:29.146+0000] {processor.py:153} INFO - Started process (PID=5677) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:44:29.148+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:44:29.148+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:44:29.148+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:44:29.538+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:44:29.537+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:44:29.538+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:44:29.546+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.405 seconds
+[2025-10-20T04:45:00.493+0000] {processor.py:153} INFO - Started process (PID=5716) to work on /opt/airflow/dags/airflow.py
+[2025-10-20T04:45:00.495+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2025-10-20T04:45:00.496+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:45:00.496+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2025-10-20T04:45:00.898+0000] {logging_mixin.py:137} INFO - [2025-10-20T04:45:00.897+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 4, in <module>
+    from kneed import KneeLocator
+ModuleNotFoundError: No module named 'kneed'
+[2025-10-20T04:45:00.898+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow.py
+[2025-10-20T04:45:00.906+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.418 seconds
